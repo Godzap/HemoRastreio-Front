@@ -4,6 +4,7 @@ import { useAuthStore } from './store/authStore';
 import { MainLayout } from './components/layout/MainLayout';
 import { LoginPage } from './pages/Login';
 import { DashboardPage } from './pages/Dashboard';
+import { SamplesPage } from './pages/Samples';
 import './index.css';
 
 const queryClient = new QueryClient({
@@ -52,7 +53,7 @@ function App() {
             }
           >
             <Route index element={<DashboardPage />} />
-            <Route path="samples" element={<PlaceholderPage title="Amostras" />} />
+            <Route path="samples" element={<SamplesPage />} />
             <Route path="storage" element={<PlaceholderPage title="Armazenamento" />} />
             <Route path="transfers" element={<PlaceholderPage title="Transferências" />} />
             <Route path="reports" element={<PlaceholderPage title="Relatórios" />} />
